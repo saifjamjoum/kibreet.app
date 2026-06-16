@@ -1,104 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <link rel="icon" type="image/png" href="favicon.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kibreet</title>
+<link rel="icon" type="image/png" href="favicon.png">
 
 <style>
+*{box-sizing:border-box}
 
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f8fafc;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-}
-
-.container{
-    width:100%;
-    max-width:700px;
-    text-align:center;
-    padding:20px;
+  margin:0;
+  min-height:100vh;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(135deg,#fff7ed,#f8fafc);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
 }
 
 .card{
-    background:white;
-    padding:50px;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+  width:100%;
+  max-width:520px;
+  background:white;
+  border-radius:28px;
+  padding:42px 34px;
+  text-align:center;
+  box-shadow:0 20px 50px rgba(0,0,0,.08);
+  border:1px solid #f1f5f9;
 }
 
 .logo{
-    width:400px;
-    max-width:90%;
-    margin-bottom:25px;
+  width:300px;
+  max-width:85%;
+  margin-bottom:18px;
+}
+
+.badge{
+  display:inline-block;
+  background:#fff1e8;
+  color:#ff5b00;
+  padding:8px 14px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:bold;
+  margin-bottom:14px;
 }
 
 .subtitle{
-    color:#64748b;
-    margin-bottom:35px;
-    font-size:18px;
+  color:#475569;
+  font-size:16px;
+  line-height:1.5;
+  margin-bottom:28px;
 }
 
 .links{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
 }
 
 .links a{
-    text-decoration:none;
-    background:#ff5b00;
-    color:white;
-    padding:16px;
-    border-radius:12px;
-    font-weight:bold;
-    transition:.2s;
+  text-decoration:none;
+  background:#111827;
+  color:white;
+  padding:16px;
+  border-radius:14px;
+  font-weight:bold;
+  transition:.2s;
 }
 
 .links a:hover{
-    background:#e65000;
-    transform:translateY(-2px);
+  background:#ff5b00;
+  transform:translateY(-2px);
 }
 
 .footer{
-    margin-top:25px;
-    color:#94a3b8;
-    font-size:14px;
+  margin-top:26px;
+  color:#94a3b8;
+  font-size:13px;
 }
-
 </style>
 </head>
 
 <body>
+  <div class="card">
+    <img src="logo.png" alt="Kibreet Logo" class="logo">
 
-<div class="container">
+    <div class="badge">Official Kibreet Resources</div>
 
-<div class="card">
+    <p class="subtitle">
+      Access our privacy policy, terms of use, and support information.
+    </p>
 
-<img src="logo.png" alt="Kibreet Logo" class="logo">
+    <div class="links">
+      <a href="privacy/">Privacy Policy</a>
+      <a href="terms/">Terms of Use</a>
+      <a href="support/">Support</a>
+    </div>
 
-<p class="subtitle">
-Official Legal, Privacy and Support Resources
-</p>
-
-<div class="links">
-<a href="privacy/">Privacy Policy</a>
-<a href="terms/">Terms of Use</a>
-<a href="support/">Support</a>
-</div>
-
-<div class="footer">
-© 2026 Kibreet
-</div>
-
-</div>
-
-</div>
-
+    <div class="footer">© 2026 Kibreet. All rights reserved.</div>
+  </div>
+</body>
+</html>
 </body>
 </html>
